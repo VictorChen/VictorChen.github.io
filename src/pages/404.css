@@ -1,0 +1,30 @@
+.NotFoundPage {
+  background-color: gray;
+  background-image: url(../assets/snow.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.NotFoundPage__main {
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 20px 5px rgba(56, 56, 56, 0.75);
+  position: relative;
+  padding: 30px 20px;
+  background-color: white;
+  border-radius: 4px;
+  opacity: 0.9;
+  text-align: center;
+  transform-origin: 50% 50%;
+}
+
+.NotFoundPage__error-icon {
+  color: #b10000;
+}
