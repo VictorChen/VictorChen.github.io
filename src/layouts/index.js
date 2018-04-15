@@ -6,26 +6,13 @@ import './index.css';
 
 const Layout = ({ children, data }) => (
   <div className="Layout">
-    <Helmet
-      title={data.site.siteMetadata.title}
-      meta={[
-        { name: 'description', content: 'Personal website for Victor Chen.' },
-        { name: 'author', content: 'Victor Chen' },
-        {
-          name: 'keywords',
-          content: [
-            'engineer',
-            'frontend',
-            'full stack',
-            'javascript',
-            'software',
-            'Victor Chen',
-            'web',
-            'website',
-          ].join(', '),
-        },
-      ]}
-    />
+    <Helmet>
+      <title>{data.site.siteMetadata.title}</title>
+      <meta name="description" content="Personal website for Victor Chen." />
+      <meta name="author" content="Victor Chen" />
+      <meta name="keywords" content="engineer, frontend, full stack, javascript, software, Victor Chen, web" />
+      <link rel="shortcut icon" href="/favicon.ico" />
+    </Helmet>
     {children()}
   </div>
 );
