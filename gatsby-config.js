@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'Victor Chen',
+    siteUrl: 'http://chenvic.com',
+    title: 'Victor Chen'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -12,6 +13,7 @@ module.exports = {
         anonymize: true,
         respectDNT: true
       }
-    }
+    },
+    { resolve: 'gatsby-plugin-sitemap' }
   ]
 }
