@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-import FaviconUrl from "../assets/favicon.ico";
 import './index.css';
 
 const Layout = ({ children, data }) => (
@@ -11,7 +10,7 @@ const Layout = ({ children, data }) => (
       <meta name="description" content="Personal website for Victor Chen." />
       <meta name="author" content="Victor Chen" />
       <meta name="keywords" content="engineer, frontend, full stack, javascript, software, Victor Chen, web" />
-      <link rel="shortcut icon" href={FaviconUrl} />
+      <link rel="shortcut icon" href="/favicon.ico" />
       <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" />
       <link
         rel="stylesheet"
