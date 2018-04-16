@@ -15,6 +15,8 @@ npm run build
 npm run serve
 ```
 
-## Deploy
+## Deploy to Github Pages
 
-Dump everything from `/public` folder to your web server!
+```
+npm run deploy
+```
