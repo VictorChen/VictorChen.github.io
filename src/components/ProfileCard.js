@@ -24,24 +24,24 @@ class ProfileCard extends React.Component {
           <div className="ProfileCard__links">
             {linkedinUrl &&
               <div className="ProfileCard__link">
-                <a href={linkedinUrl} className="ProfileCard__link-icon fa fa-linkedin" target="_blank">Linkedin</a>
+                <a href={linkedinUrl} className="ProfileCard__link-icon fab fa-linkedin" target="_blank">Linkedin</a>
               </div>
             }
             {email &&
               <div className="ProfileCard__link">
-                <a href={`mailto:${email}`} className="ProfileCard__link-icon fa fa-envelope" target="_top">
+                <a href={`mailto:${email}`} className="ProfileCard__link-icon fas fa-envelope" target="_top">
                   Email
                 </a>
               </div>
             }
             {githubUrl &&
               <div className="ProfileCard__link">
-                <a href={githubUrl} className="ProfileCard__link-icon fa fa-github" target="_blank">Github</a>
+                <a href={githubUrl} className="ProfileCard__link-icon fab fa-github" target="_blank">Github</a>
               </div>
             }
             {twitterUrl &&
               <div className="ProfileCard__link">
-                <a href={twitterUrl} className="ProfileCard__link-icon fa fa-twitter" target="_blank">Twitter</a>
+                <a href={twitterUrl} className="ProfileCard__link-icon fab fa-twitter" target="_blank">Twitter</a>
               </div>
             }
           </div>

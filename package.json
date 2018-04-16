@@ -4,7 +4,6 @@
   "version": "1.0.0",
   "author": "Victor Chen <itsvicc@gmail.com>",
   "dependencies": {
-    "font-awesome": "^4.7.0",
     "gatsby": "^1.9.247",
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-google-analytics": "^1.0.29",
