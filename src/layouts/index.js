@@ -12,6 +12,7 @@ const Layout = ({ children, data }) => (
       <meta name="author" content="Victor Chen" />
       <meta name="keywords" content="engineer, frontend, full stack, javascript, software, Victor Chen, web" />
       <link rel="shortcut icon" href={FaviconUrl} />
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" />
       <link
         rel="stylesheet"
         href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
