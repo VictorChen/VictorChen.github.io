@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
+import FaviconUrl from "../assets/favicon.ico";
 import 'font-awesome/css/font-awesome.css';
 import './index.css';
 
@@ -11,7 +12,7 @@ const Layout = ({ children, data }) => (
       <meta name="description" content="Personal website for Victor Chen." />
       <meta name="author" content="Victor Chen" />
       <meta name="keywords" content="engineer, frontend, full stack, javascript, software, Victor Chen, web" />
-      <link rel="shortcut icon" href="/favicon.ico" />
+      <link rel="shortcut icon" href={FaviconUrl} />
     </Helmet>
     {children()}
   </div>
