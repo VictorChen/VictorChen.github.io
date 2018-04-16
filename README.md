@@ -14,3 +14,7 @@ npm start
 npm run build
 npm run serve
 ```
+
+## Deploy
+
+Dump everything from `/public` folder to your web server!
