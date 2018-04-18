@@ -1,6 +1,6 @@
 import React from 'react';
 import ProfileCard from '../components/ProfileCard';
-import VictorImg from "../assets/victor.jpg";
+import VictorImg from "../assets/victor-head.jpg";
 import './index.css';
 
 const Index = () => (
