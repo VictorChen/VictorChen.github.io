@@ -4,7 +4,17 @@ import './ProfileCard.css';
 
 class ProfileCard extends React.Component {
   render() {
-    const { fullName, title, image, imageAlt, linkedinUrl, email, githubUrl, twitterUrl, description } = this.props;
+    const {
+      fullName,
+      title,
+      image,
+      imageAlt,
+      linkedinUrl,
+      email,
+      githubUrl,
+      twitterUrl,
+      renderContent
+    } = this.props;
 
     return (
       <div className="ProfileCard">
@@ -16,9 +26,7 @@ class ProfileCard extends React.Component {
           {title &&
             <div className="ProfileCard__title">{title}</div>
           }
-          {description &&
-            <div className="ProfileCard__description">{description}</div>
-          }
+          {renderContent}
         </div>
         <div className="ProfileCard__footer">
           <div className="ProfileCard__links">
@@ -52,10 +60,10 @@ class ProfileCard extends React.Component {
 }
 
 ProfileCard.propTypes = {
+  renderContent: PropTypes.node,
   fullName: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   title: PropTypes.string,
-  description: PropTypes.string,
   linkedinUrl: PropTypes.string,
   email: PropTypes.string,
   githubUrl: PropTypes.string,
