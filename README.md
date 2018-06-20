@@ -8,6 +8,8 @@ npm install
 npm start
 ```
 
+Push changes to `dev` branch.
+
 ## Test Production Version
 
 ```
