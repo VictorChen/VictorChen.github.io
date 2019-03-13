@@ -13,45 +13,72 @@ class ProfileCard extends React.Component {
       email,
       githubUrl,
       twitterUrl,
-      renderContent
+      renderContent,
     } = this.props;
 
     return (
       <div className="ProfileCard">
         <div className="ProfileCard__header">
           <span className="ProfileCard__avatar">
-            <img className="ProfileCard__avatar-img" src={image} alt={imageAlt} />
+            <img
+              className="ProfileCard__avatar-img"
+              src={image}
+              alt={imageAlt}
+            />
           </span>
           <div className="ProfileCard__fullName">{fullName}</div>
-          {title &&
-            <div className="ProfileCard__title">{title}</div>
-          }
+          {title && <div className="ProfileCard__title">{title}</div>}
           {renderContent}
         </div>
         <div className="ProfileCard__footer">
           <div className="ProfileCard__links">
-            {linkedinUrl &&
+            {linkedinUrl && (
               <div className="ProfileCard__link">
-                <a href={linkedinUrl} className="ProfileCard__link-icon fab fa-linkedin" target="_blank">Linkedin</a>
+                <a
+                  href={linkedinUrl}
+                  rel="noopener noreferrer"
+                  className="ProfileCard__link-icon fab fa-linkedin"
+                  target="_blank"
+                >
+                  Linkedin
+                </a>
               </div>
-            }
-            {email &&
+            )}
+            {email && (
               <div className="ProfileCard__link">
-                <a href={`mailto:${email}`} className="ProfileCard__link-icon fas fa-envelope" target="_top">
+                <a
+                  href={`mailto: rel="noopener noreferrer"${email}`}
+                  className="ProfileCard__link-icon fas fa-envelope"
+                  target="_top"
+                >
                   Email
                 </a>
               </div>
-            }
-            {githubUrl &&
+            )}
+            {githubUrl && (
               <div className="ProfileCard__link">
-                <a href={githubUrl} className="ProfileCard__link-icon fab fa-github" target="_blank">Github</a>
+                <a
+                  href={githubUrl}
+                  rel="noopener noreferrer"
+                  className="ProfileCard__link-icon fab fa-github"
+                  target="_blank"
+                >
+                  Github
+                </a>
               </div>
-            }
-            {twitterUrl &&
+            )}
+            {twitterUrl && (
               <div className="ProfileCard__link">
-                <a href={twitterUrl} className="ProfileCard__link-icon fab fa-twitter" target="_blank">Twitter</a>
+                <a
+                  href={twitterUrl}
+                  rel="noopener noreferrer"
+                  className="ProfileCard__link-icon fab fa-twitter"
+                  target="_blank"
+                >
+                  Twitter
+                </a>
               </div>
-            }
+            )}
           </div>
         </div>
       </div>
@@ -67,7 +94,7 @@ ProfileCard.propTypes = {
   linkedinUrl: PropTypes.string,
   email: PropTypes.string,
   githubUrl: PropTypes.string,
-  twitterUrl: PropTypes.string
+  twitterUrl: PropTypes.string,
 };
 
 export default ProfileCard;

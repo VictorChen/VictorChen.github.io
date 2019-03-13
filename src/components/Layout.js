@@ -1,17 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-import './index.css';
+import './Layout.css';
 
 const Layout = ({ children, data }) => (
   <div className="Layout">
     <Helmet>
-      <title>{data.site.siteMetadata.title}</title>
+      <title>Victor Chen</title>
       <meta name="description" content="Personal website for Victor Chen." />
       <meta name="author" content="Victor Chen" />
-      <meta name="keywords" content="engineer, frontend, full stack, javascript, software, Victor Chen, web" />
+      <meta
+        name="keywords"
+        content="engineer, frontend, full stack, javascript, software, Victor Chen, web"
+      />
       <link rel="shortcut icon" href="/favicon.ico" />
-      <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" />
+      <link
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,700"
+        rel="stylesheet"
+      />
       <link
         rel="stylesheet"
         href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
@@ -19,22 +25,12 @@ const Layout = ({ children, data }) => (
         crossOrigin="anonymous"
       />
     </Helmet>
-    {children()}
+    {children}
   </div>
 );
 
 Layout.propTypes = {
-  children: PropTypes.func,
+  children: PropTypes.node,
 };
 
 export default Layout;
-
-export const query = graphql`
-  query SiteTitleQuery {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`;
