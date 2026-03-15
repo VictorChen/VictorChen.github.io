@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { Github, Linkedin, Twitter, Mail } from 'lucide-react';
-import { useMemo } from 'react';
+import { useState, useEffect } from 'react';
 
 const themes = [
   { bg: '#0f0c29', blobs: ['#7b2ff7', '#f107a3', '#302b63'] },
@@ -54,7 +54,10 @@ const socialLinks = [
 ];
 
 export default function Home() {
-  const theme = useMemo(() => themes[Math.floor(Math.random() * themes.length)], []);
+  const [theme, setTheme] = useState(themes[0]);
+  useEffect(() => {
+    setTheme(themes[Math.floor(Math.random() * themes.length)]);
+  }, []);
 
   return (
     <main className="relative min-h-screen flex items-center justify-center p-4 overflow-hidden"
