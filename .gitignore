@@ -3,6 +3,8 @@
 node_modules
 yarn-error.log
 
-# Build directory
-/public
+# Build output
+/out
+.next
+
 .DS_Store
