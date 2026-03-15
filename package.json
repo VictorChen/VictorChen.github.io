@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "deploy": "next build && gh-pages -b master -d out"
+    "deploy": "next build && gh-pages -b master -d out --dotfiles"
   },
   "dependencies": {
     "next": "^15.3.0",
