@@ -13,15 +13,15 @@ export const themes = [
 export const roles = ['Frontend Engineer', 'Hacker', 'Vibe Coder', 'Memer', 'Certified Bag Holder'];
 
 export const interests = [
-  { icon: '/icons/snowboarder.png', label: 'Snowboarding' },
-  { icon: '/icons/increase.png', label: 'Stonks' },
-  { icon: '/icons/globe.png', label: 'Frontend Dev' },
-  { icon: '/icons/dog.png', label: 'Animals' },
-  { icon: '/icons/code.png', label: 'JavaScript' },
-  { icon: '/icons/troll.png', label: 'Memes' },
-  { icon: '/icons/cards.png', label: 'Magic' },
-  { icon: '/icons/anime.png', label: 'Anime' },
-  { icon: '/icons/android.png', label: 'Android' },
+  { emoji: '🏂', label: 'Snowboarding' },
+  { emoji: '📈', label: 'Stonks' },
+  { emoji: '🌐', label: 'Frontend Dev' },
+  { emoji: '🐶', label: 'Animals' },
+  { emoji: '💻', label: 'JavaScript' },
+  { emoji: '🐸', label: 'Memes' },
+  { emoji: '🃏', label: 'Magic' },
+  { emoji: '⛩️', label: 'Anime' },
+  { emoji: '🤖', label: 'Android' },
 ];
 
 export const socialLinks = [

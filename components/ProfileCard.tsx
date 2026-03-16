@@ -81,12 +81,12 @@ export default function ProfileCard() {
             Interests
           </p>
           <div className="flex flex-wrap gap-2">
-            {interests.map(({ icon, label }) => (
+            {interests.map(({ emoji, label }) => (
               <span
                 key={label}
                 className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/10 border border-white/15 text-white text-xs font-medium transition-all duration-200 hover:bg-white/20 hover:scale-105 cursor-default"
               >
-                <Image src={icon} alt={label} width={13} height={13} className="opacity-80" />
+                <span>{emoji}</span>
                 {label}
               </span>
             ))}
