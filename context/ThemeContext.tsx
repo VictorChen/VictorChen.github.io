@@ -1,7 +1,7 @@
 'use client';
 
 import { createContext, useContext, useState, useEffect } from 'react';
-import { themes } from '@/lib/data';
+import { themes } from '@/constants';
 
 type Theme = (typeof themes)[number];
 

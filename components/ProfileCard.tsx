@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { interests, socialLinks, roles } from '@/lib/data';
+import { interests, socialLinks, roles } from '@/constants';
 import { useCardTilt } from '@/hooks/useCardTilt';
 import { useTypewriter } from '@/hooks/useTypewriter';
 import { useThemeContext } from '@/context/ThemeContext';
