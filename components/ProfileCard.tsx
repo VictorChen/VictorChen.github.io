@@ -1,22 +1,23 @@
+'use client';
+
 import Image from 'next/image';
-import { interests, socialLinks } from '@/lib/data';
+import { interests, socialLinks, roles } from '@/lib/data';
+import { useCardTilt } from '@/hooks/useCardTilt';
+import { useTypewriter } from '@/hooks/useTypewriter';
+import { useThemeContext } from '@/context/ThemeContext';
 
-interface Props {
-  mounted: boolean;
-  role: string;
-  cardRef: React.RefObject<HTMLDivElement | null>;
-  onMouseMove: (e: React.MouseEvent<HTMLDivElement>) => void;
-  onMouseLeave: () => void;
-}
+export default function ProfileCard() {
+  const { mounted } = useThemeContext();
+  const { cardRef, handleMouseMove, handleMouseLeave } = useCardTilt();
+  const role = useTypewriter(roles);
 
-export default function ProfileCard({ mounted, role, cardRef, onMouseMove, onMouseLeave }: Props) {
   return (
     <div
       ref={cardRef}
       className="relative w-full max-w-sm z-10"
       style={{ willChange: 'transform' }}
-      onMouseMove={onMouseMove}
-      onMouseLeave={onMouseLeave}
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
     >
       <div className="bg-white/10 backdrop-blur-xl rounded-3xl shadow-2xl overflow-hidden border border-white/20">
         {/* Top accent bar */}
