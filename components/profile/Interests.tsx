@@ -18,9 +18,9 @@ export default function Interests() {
         {interests.map(({ emoji, label }) => (
           <span
             key={label}
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/10 border border-white/15 text-white text-xs font-medium transition-all duration-200 hover:bg-white/20 hover:scale-105 cursor-default"
+            className="group inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/10 border border-white/15 text-white text-xs font-medium transition-all duration-200 hover:bg-white/20 hover:scale-105 hover:shadow-[0_0_12px_2px_rgba(255,255,255,0.15)] cursor-default"
           >
-            <span>{emoji}</span>
+            <span className="group-hover:[animation:emoji-bounce_0.5s_ease] inline-block">{emoji}</span>
             {label}
           </span>
         ))}
