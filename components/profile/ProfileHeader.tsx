@@ -1,12 +1,12 @@
 'use client';
 
 import Image from 'next/image';
-import { useThemeContext } from '@/context/ThemeContext';
+import { useMounted } from '@/hooks/useMounted';
 import { useTypewriter } from '@/hooks/useTypewriter';
 import { roles } from '@/constants';
 
 export default function ProfileHeader() {
-  const { mounted } = useThemeContext();
+  const mounted = useMounted();
   const role = useTypewriter(roles);
 
   return (

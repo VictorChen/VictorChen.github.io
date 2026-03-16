@@ -1,10 +1,10 @@
 'use client';
 
 import { interests } from '@/constants';
-import { useThemeContext } from '@/context/ThemeContext';
+import { useMounted } from '@/hooks/useMounted';
 
 export default function Interests() {
-  const { mounted } = useThemeContext();
+  const mounted = useMounted();
 
   return (
     <div

@@ -1,13 +1,13 @@
 'use client';
 
-import { useThemeContext } from '@/context/ThemeContext';
+import { useMounted } from '@/hooks/useMounted';
 import { useCardTilt } from '@/hooks/useCardTilt';
 import ProfileHeader from './ProfileHeader';
 import SocialLinks from './SocialLinks';
 import Interests from './Interests';
 
 export default function ProfileCard() {
-  const { mounted } = useThemeContext();
+  const mounted = useMounted();
   const { cardRef, handleMouseMove, handleMouseLeave } = useCardTilt();
 
   return (

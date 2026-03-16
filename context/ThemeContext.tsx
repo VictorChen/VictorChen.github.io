@@ -8,18 +8,15 @@ type Theme = (typeof themes)[number];
 interface ThemeContextValue {
   theme: Theme;
   cycleTheme: () => void;
-  mounted: boolean;
 }
 
 const ThemeContext = createContext<ThemeContextValue | null>(null);
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [themeIndex, setThemeIndex] = useState(0);
-  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     setThemeIndex(Math.floor(Math.random() * themes.length));
-    setMounted(true);
   }, []);
 
   return (
@@ -27,7 +24,6 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
       value={{
         theme: themes[themeIndex],
         cycleTheme: () => setThemeIndex((i) => (i + 1) % themes.length),
-        mounted,
       }}
     >
       {children}

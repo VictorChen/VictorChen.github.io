@@ -2,10 +2,10 @@
 
 import { socialLinks } from '@/constants';
 import { socialIcons } from '@/components/icons';
-import { useThemeContext } from '@/context/ThemeContext';
+import { useMounted } from '@/hooks/useMounted';
 
 export default function SocialLinks() {
-  const { mounted } = useThemeContext();
+  const mounted = useMounted();
 
   return (
     <div
