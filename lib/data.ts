@@ -1,4 +1,7 @@
-import { Github, Linkedin, Twitter, Mail } from 'lucide-react';
+import LinkedIn from '@/components/icons/LinkedIn';
+import GitHub from '@/components/icons/GitHub';
+import X from '@/components/icons/X';
+import Mail from '@/components/icons/Mail';
 
 export const themes = [
   { bg: '#0f0c29', blobs: ['#7b2ff7', '#f107a3', '#302b63'] },
@@ -26,22 +29,22 @@ export const interests = [
 
 export const socialLinks = [
   {
-    icon: Linkedin,
+    icon: LinkedIn,
     href: 'https://www.linkedin.com/in/vichen',
     label: 'LinkedIn',
     hoverClass: 'hover:bg-[#0077B5] hover:text-white',
   },
   {
-    icon: Github,
+    icon: GitHub,
     href: 'https://github.com/VictorChen',
     label: 'GitHub',
     hoverClass: 'hover:bg-[#25292E] hover:text-white',
   },
   {
-    icon: Twitter,
-    href: 'https://twitter.com/itxVic',
-    label: 'Twitter',
-    hoverClass: 'hover:bg-[#1DA1F2] hover:text-white',
+    icon: X,
+    href: 'https://x.com/itxVic',
+    label: 'X',
+    hoverClass: 'hover:bg-[#000000] hover:text-white',
   },
   {
     icon: Mail,

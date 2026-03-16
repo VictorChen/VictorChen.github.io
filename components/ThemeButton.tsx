@@ -1,4 +1,4 @@
-import { Shuffle } from 'lucide-react';
+import Shuffle from '@/components/icons/Shuffle';
 import { useThemeContext } from '@/context/ThemeContext';
 
 export default function ThemeButton() {

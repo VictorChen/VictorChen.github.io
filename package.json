@@ -10,7 +10,6 @@
     "deploy": "next build && gh-pages -b master -d out --dotfiles"
   },
   "dependencies": {
-    "lucide-react": "^0.475.0",
     "next": "^15.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
