@@ -1,3 +1,5 @@
+'use client';
+
 import Shuffle from '@/components/icons/Shuffle';
 import { useThemeContext } from '@/context/ThemeContext';
 

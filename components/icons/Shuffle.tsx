@@ -1,4 +1,6 @@
-export default function Shuffle({ size = 24 }: { size?: number }) {
+import type { IconProps } from '@/types';
+
+export default function Shuffle({ size = 24 }: IconProps) {
   return (
     <svg role="img" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       <path d="M2 18h1.4c1.3 0 2.5-.6 3.3-1.7l6.1-8.6c.7-1.1 2-1.7 3.3-1.7H22" />

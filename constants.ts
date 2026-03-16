@@ -1,9 +1,6 @@
-import LinkedIn from '@/components/icons/LinkedIn';
-import GitHub from '@/components/icons/GitHub';
-import X from '@/components/icons/X';
-import Mail from '@/components/icons/Mail';
+import type { Theme, Interest, SocialLink } from '@/types';
 
-export const themes = [
+export const themes: Theme[] = [
   { bg: '#0f0c29', blobs: ['#7b2ff7', '#f107a3', '#302b63'] },
   { bg: '#0d1b2a', blobs: ['#1e6091', '#48cae4', '#023e8a'] },
   { bg: '#1a0533', blobs: ['#e040fb', '#7c4dff', '#ff4081'] },
@@ -13,9 +10,15 @@ export const themes = [
   { bg: '#1a1a1a', blobs: ['#f50057', '#d500f9', '#ff6d00'] },
 ];
 
-export const roles = ['Frontend Engineer', 'Hacker', 'Vibe Coder', 'Memer', 'Certified Bag Holder'];
+export const roles: string[] = [
+  'Frontend Engineer',
+  'Hacker',
+  'Vibe Coder',
+  'Memer',
+  'Certified Bag Holder',
+];
 
-export const interests = [
+export const interests: Interest[] = [
   { emoji: '🏂', label: 'Snowboarding' },
   { emoji: '📈', label: 'Stonks' },
   { emoji: '🌐', label: 'Frontend Dev' },
@@ -27,29 +30,9 @@ export const interests = [
   { emoji: '🤖', label: 'Android' },
 ];
 
-export const socialLinks = [
-  {
-    icon: LinkedIn,
-    href: 'https://www.linkedin.com/in/vichen',
-    label: 'LinkedIn',
-    hoverClass: 'hover:bg-[#0077B5] hover:text-white',
-  },
-  {
-    icon: GitHub,
-    href: 'https://github.com/VictorChen',
-    label: 'GitHub',
-    hoverClass: 'hover:bg-[#25292E] hover:text-white',
-  },
-  {
-    icon: X,
-    href: 'https://x.com/itxVic',
-    label: 'X',
-    hoverClass: 'hover:bg-[#000000] hover:text-white',
-  },
-  {
-    icon: Mail,
-    href: 'mailto:chen_victor@ymail.com',
-    label: 'Email',
-    hoverClass: 'hover:bg-[#DB4437] hover:text-white',
-  },
+export const socialLinks: SocialLink[] = [
+  { icon: 'linkedin', href: 'https://www.linkedin.com/in/vichen', label: 'LinkedIn', hoverClass: 'hover:bg-[#0077B5] hover:text-white' },
+  { icon: 'github', href: 'https://github.com/VictorChen', label: 'GitHub', hoverClass: 'hover:bg-[#25292E] hover:text-white' },
+  { icon: 'x', href: 'https://x.com/itxVic', label: 'X', hoverClass: 'hover:bg-[#000000] hover:text-white' },
+  { icon: 'mail', href: 'mailto:chen_victor@ymail.com', label: 'Email', hoverClass: 'hover:bg-[#DB4437] hover:text-white' },
 ];

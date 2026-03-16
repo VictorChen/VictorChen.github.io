@@ -1,4 +1,6 @@
-export default function Mail({ size = 24 }: { size?: number }) {
+import type { IconProps } from '@/types';
+
+export default function Mail({ size = 24 }: IconProps) {
   return (
     <svg role="img" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       <rect width="20" height="16" x="2" y="4" rx="2" />

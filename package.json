@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "lint": "eslint .",
     "format": "prettier --write \"**/*.{ts,tsx,css,json}\" --ignore-path .gitignore",
     "deploy": "next build && gh-pages -b master -d out --dotfiles"
   },
@@ -19,6 +20,8 @@
     "@types/node": "^22",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "eslint": "^9.39.4",
+    "eslint-plugin-react-hooks": "^7.0.1",
     "gh-pages": "^6.0.0",
     "prettier": "^3.8.1",
     "tailwindcss": "^4.0.0",

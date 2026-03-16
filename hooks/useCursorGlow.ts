@@ -1,9 +1,12 @@
-import { useRef } from 'react';
+import { useRef, useEffect } from 'react';
 
 export function useCursorGlow(color: string) {
   const glowRef = useRef<HTMLDivElement>(null);
   const colorRef = useRef(color);
-  colorRef.current = color;
+
+  useEffect(() => {
+    colorRef.current = color;
+  }, [color]);
 
   const handleMouseMove = (e: React.MouseEvent) => {
     if (glowRef.current) {
