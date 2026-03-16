@@ -28,6 +28,7 @@ export const interests: Interest[] = [
   { emoji: '🃏', label: 'Magic' },
   { emoji: '⛩️', label: 'Anime' },
   { emoji: '🤖', label: 'Android' },
+  { emoji: '🏓', label: 'Pickleball' },
 ];
 
 export const socialLinks: SocialLink[] = [
