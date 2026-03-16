@@ -3,7 +3,7 @@
 import { createContext, useContext, useState, useEffect } from 'react';
 import { themes } from '@/lib/data';
 
-type Theme = typeof themes[number];
+type Theme = (typeof themes)[number];
 
 interface ThemeContextValue {
   theme: Theme;
@@ -23,11 +23,13 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   return (
-    <ThemeContext.Provider value={{
-      theme: themes[themeIndex],
-      cycleTheme: () => setThemeIndex(i => (i + 1) % themes.length),
-      mounted,
-    }}>
+    <ThemeContext.Provider
+      value={{
+        theme: themes[themeIndex],
+        cycleTheme: () => setThemeIndex((i) => (i + 1) % themes.length),
+        mounted,
+      }}
+    >
       {children}
     </ThemeContext.Provider>
   );

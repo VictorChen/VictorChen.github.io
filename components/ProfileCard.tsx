@@ -35,15 +35,22 @@ export default function ProfileCard() {
               priority
             />
           </div>
-          <div className={`flex flex-col items-center ${mounted ? 'anim-item' : 'opacity-0'}`} style={{ animationDelay: '0.15s' }}>
+          <div
+            className={`flex flex-col items-center ${mounted ? 'anim-item' : 'opacity-0'}`}
+            style={{ animationDelay: '0.15s' }}
+          >
             <h1 className="mt-4 text-2xl font-bold text-white tracking-tight">Victor Chen</h1>
             <p className="mt-1 text-sm text-white/60 font-medium min-h-[1.25rem]">
-              {role}<span className="blink-cursor">|</span>
+              {role}
+              <span className="blink-cursor">|</span>
             </p>
           </div>
 
           {/* Social links */}
-          <div className={`flex items-center gap-1.5 mt-5 ${mounted ? 'anim-item' : 'opacity-0'}`} style={{ animationDelay: '0.25s' }}>
+          <div
+            className={`flex items-center gap-1.5 mt-5 ${mounted ? 'anim-item' : 'opacity-0'}`}
+            style={{ animationDelay: '0.25s' }}
+          >
             {socialLinks.map(({ icon: Icon, href, label, hoverClass }) => (
               <a
                 key={label}
@@ -60,10 +67,16 @@ export default function ProfileCard() {
         </div>
 
         {/* Divider */}
-        <div className={`border-t border-white/10 mx-6 ${mounted ? 'anim-item' : 'opacity-0'}`} style={{ animationDelay: '0.35s' }} />
+        <div
+          className={`border-t border-white/10 mx-6 ${mounted ? 'anim-item' : 'opacity-0'}`}
+          style={{ animationDelay: '0.35s' }}
+        />
 
         {/* Interests */}
-        <div className={`px-6 py-5 ${mounted ? 'anim-item' : 'opacity-0'}`} style={{ animationDelay: '0.45s' }}>
+        <div
+          className={`px-6 py-5 ${mounted ? 'anim-item' : 'opacity-0'}`}
+          style={{ animationDelay: '0.45s' }}
+        >
           <p className="text-[10px] font-semibold tracking-[0.15em] uppercase text-white/40 mb-3">
             Interests
           </p>

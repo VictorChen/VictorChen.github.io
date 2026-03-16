@@ -6,13 +6,14 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "format": "prettier --write \"**/*.{ts,tsx,css,json}\" --ignore-path .gitignore",
     "deploy": "next build && gh-pages -b master -d out --dotfiles"
   },
   "dependencies": {
+    "lucide-react": "^0.475.0",
     "next": "^15.3.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "lucide-react": "^0.475.0"
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.0.0",
@@ -20,6 +21,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "gh-pages": "^6.0.0",
+    "prettier": "^3.8.1",
     "tailwindcss": "^4.0.0",
     "typescript": "^5"
   }

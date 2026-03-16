@@ -4,7 +4,7 @@ export function useTypewriter(
   words: string[],
   typingSpeed = 80,
   deletingSpeed = 45,
-  pauseDuration = 2000,
+  pauseDuration = 2000
 ) {
   const [text, setText] = useState('');
   const textRef = useRef('');

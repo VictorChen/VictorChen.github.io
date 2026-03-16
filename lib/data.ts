@@ -10,13 +10,7 @@ export const themes = [
   { bg: '#1a1a1a', blobs: ['#f50057', '#d500f9', '#ff6d00'] },
 ];
 
-export const roles = [
-  'Frontend Engineer',
-  'Hacker',
-  'Vibe Coder',
-  'Memer',
-  'Certified Bag Holder',
-];
+export const roles = ['Frontend Engineer', 'Hacker', 'Vibe Coder', 'Memer', 'Certified Bag Holder'];
 
 export const interests = [
   { icon: '/icons/snowboarder.png', label: 'Snowboarding' },
@@ -31,8 +25,28 @@ export const interests = [
 ];
 
 export const socialLinks = [
-  { icon: Linkedin, href: 'https://www.linkedin.com/in/vichen', label: 'LinkedIn', hoverClass: 'hover:bg-[#0077B5] hover:text-white' },
-  { icon: Github, href: 'https://github.com/VictorChen', label: 'GitHub', hoverClass: 'hover:bg-[#25292E] hover:text-white' },
-  { icon: Twitter, href: 'https://twitter.com/itxVic', label: 'Twitter', hoverClass: 'hover:bg-[#1DA1F2] hover:text-white' },
-  { icon: Mail, href: 'mailto:chen_victor@ymail.com', label: 'Email', hoverClass: 'hover:bg-[#DB4437] hover:text-white' },
+  {
+    icon: Linkedin,
+    href: 'https://www.linkedin.com/in/vichen',
+    label: 'LinkedIn',
+    hoverClass: 'hover:bg-[#0077B5] hover:text-white',
+  },
+  {
+    icon: Github,
+    href: 'https://github.com/VictorChen',
+    label: 'GitHub',
+    hoverClass: 'hover:bg-[#25292E] hover:text-white',
+  },
+  {
+    icon: Twitter,
+    href: 'https://twitter.com/itxVic',
+    label: 'Twitter',
+    hoverClass: 'hover:bg-[#1DA1F2] hover:text-white',
+  },
+  {
+    icon: Mail,
+    href: 'mailto:chen_victor@ymail.com',
+    label: 'Email',
+    hoverClass: 'hover:bg-[#DB4437] hover:text-white',
+  },
 ];
