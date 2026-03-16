@@ -8,4 +8,4 @@ yarn-error.log
 .next
 
 .DS_Store
-\ntsconfig.tsbuildinfo
+tsconfig.tsbuildinfo
